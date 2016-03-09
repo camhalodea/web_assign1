@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">>
+		<link rel=stylesheet type="text/css" href="quiz1.css"> 
+		<title>線上報名</title>
+	</head>
+
+	<body>
+		<form>
+			<label for="name">姓名:</label>
+				<input type="text" required id="name" maxlength="10" placeholder="Your name"><br>
+			<lable for="college">學院:</lable>
+				<input type="text" required id="college" list="collegeOption"><br>
+				<datalist id="collegeOption">
+					<option value="文學院"/>
+					<option value="理學院"/>
+					<option value="社會科學學院"/>
+					<option value="法學院"/>
+					<option value="商學院"/>
+					<option value="外國語文學院"/>
+					<option value="傳播學院"/>
+					<option value="國際事務學院"/>
+					<option value="教育學院"/>
+				</datalist>
+			<label for="cellphone">手機:</label> 
+				<input type="text" required id="cellphone" pattern="[0-9]{10}" maxlength="10"><br>
+			<form role="form" novalidate>
+			<label for="email">Email:</label>
+				<input type="email" required id="inpEmail" placeholder="Your e-mail address">
+			</form>
+			<lable for="birthday">生日:</lable>
+				<input type="date" id="birthdate">
+			<div>
+				<input type="submit" value="Submit" />
+			</div>
+
+		</form>
+	</body>
+</html>
