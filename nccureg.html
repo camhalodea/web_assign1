@@ -3,15 +3,17 @@
 	<head>
 		<meta charset="UTF-8">>
 		<link rel=stylesheet type="text/css" href="quiz1.css"> 
-		<title>線上報名</title>
+		<title>線上報名系統</title>
 	</head>
 
 	<body>
+		<h1>請填寫您的基本資料</h1>
+		<p>
 		<form>
 			<label for="name">姓名:</label>
-				<input type="text" required id="name" maxlength="10" placeholder="Your name"><br>
+				<input type="text" required id="name" maxlength="10" placeholder="填寫您的姓名"><br>
 			<lable for="college">學院:</lable>
-				<input type="text" required id="college" list="collegeOption"><br>
+				<input type="text" required id="college" list="collegeOption" placeholder="選擇您的所屬學院"><br>
 				<datalist id="collegeOption">
 					<option value="文學院"/>
 					<option value="理學院"/>
@@ -24,17 +26,17 @@
 					<option value="教育學院"/>
 				</datalist>
 			<label for="cellphone">手機:</label> 
-				<input type="text" required id="cellphone" pattern="[0-9]{10}" maxlength="10"><br>
+				<input type="text" required id="cellphone" pattern="[0-9]{10}" maxlength="10" placeholder="填寫您的手機"><br>
 			<form role="form" novalidate>
 			<label for="email">Email:</label>
-				<input type="email" required id="inpEmail" placeholder="Your e-mail address">
+				<input type="email" required id="inpEmail" placeholder="填寫您的學校信箱">
 			</form>
 			<lable for="birthday">生日:</lable>
-				<input type="date" id="birthdate">
+				<input type="date" id="birthdate" placeholder="選擇您的生日">
 			<div>
 				<input type="submit" value="Submit" />
 			</div>
-
 		</form>
+		</p>
 	</body>
 </html>
